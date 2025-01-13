@@ -14,9 +14,12 @@ class CalcController extends Controller
             $result = $i1 - $i2;
         } elseif ($operator == 'multiplication') {
             $result = $i1 * $i2;
-        } else {
+        } elseif ($operator == 'division') {
             $result = $i1 / $i2;
+        }else {
+            $result = 'エラー';
         }
+
         return view('calcs.result1', ['result' => $result]);
     }
 }
