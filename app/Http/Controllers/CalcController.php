@@ -16,7 +16,7 @@ class CalcController extends Controller
             $result = $i1 * $i2;
         } elseif ($operator == 'division') {
             $result = $i1 / $i2;
-        }else {
+        } else {
             $result = 'エラー';
         }
 
